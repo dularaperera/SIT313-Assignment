@@ -8,7 +8,7 @@
     <Button Text="Meals" VerticalOptions="Center" HorizontalOptions="Center"  WidthRequest="200" Clicked="Meals_btn_Clicked" />
     <Button Text="About Us" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200"/>
     <Button Text="Login" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Clicked="Login_btn_Clicked"/>
-    <Button Text="Our Restaurent" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" />
+    <Button Text="Our Restaurant" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" />
     
   </StackLayout>
   
