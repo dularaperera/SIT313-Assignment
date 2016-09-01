@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="SIT313_Assignment2.Windows.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SIT313_Assignment2.Windows">
+
+</Application>
