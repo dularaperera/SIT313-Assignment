@@ -7,7 +7,7 @@
     <Entry Placeholder="Password" />
     <Button Text="Login" />
     <Label Text="Not a member? Sign Up now!" />
-    <Button Text="Sign Up" />
+    <Button Text="Sign Up" Clicked="SignUp_btn_Clicked"/>
     
   </StackLayout>
 </ContentPage>

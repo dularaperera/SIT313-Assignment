@@ -14,5 +14,10 @@ namespace SIT313_Assignment2
         {
             InitializeComponent();
         }
+
+        public void SignUp_btn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SignUp());
+        }
     }
 }
