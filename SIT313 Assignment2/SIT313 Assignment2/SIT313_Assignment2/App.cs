@@ -13,6 +13,9 @@ namespace SIT313_Assignment2
         {
             // The root page of your application
             MainPage = new NavigationPage(new MainMenu());
+
+
+
         }
 
         protected override void OnStart()
