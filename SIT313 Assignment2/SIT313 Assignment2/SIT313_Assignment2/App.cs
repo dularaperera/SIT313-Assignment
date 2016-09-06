@@ -12,7 +12,10 @@ namespace SIT313_Assignment2
         public App()
         {
             // The root page of your application
+           // MainPage = new NavigationPage(new MainMenu());
+
             MainPage = new NavigationPage(new MainMenu());
+
 
 
 
