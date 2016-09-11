@@ -8,6 +8,7 @@ namespace SIT313_Assignment2
 {
     public class data
     {
+        public string Image { get; set; }
         public string Name { get; set; }
         public string Price { get; set; }
         public string Description{ get; set; }

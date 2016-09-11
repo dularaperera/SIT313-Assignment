@@ -22,7 +22,7 @@ namespace SIT313_Assignment2
             //set bindings
             left.SetBinding(Label.TextProperty, "Name");
             right.SetBinding(Label.TextProperty, "Price");
-            image.SetBinding(Image.SourceProperty, "image");
+            image.SetBinding(Image.SourceProperty, "Image");
 
             //Set properties for desired design
             cellWrapper.BackgroundColor = Color.FromHex("#eee");

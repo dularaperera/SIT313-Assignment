@@ -18,14 +18,37 @@ namespace SIT313_Assignment2
             InitializeComponent();
             ObservableCollection<data> myList = new ObservableCollection<data>();
 
-           listView.ItemsSource = myList;
+         
 
-            for (int x = 0; x < 20; x++)
-            {
-                myList.Add(new data() { Name = "Kottu", Price = "10", Description = "This is a nice food!" });
+            //----------------------------------------------------------------------------------------------------------------------------
 
-            }
-           // listView.ItemTemplate = new DataTemplate(typeof(CustomCell));
+            
+        
+           ProductsQuery newProduct = new ProductsQuery();
+
+            ProductsDB product = new ProductsDB();
+            product.Image = "food.png";
+            product.Name = "Rice";
+            product.Description = "This is rice";
+            product.Price = "10";
+            product.Date = "4/8/216";            
+            newProduct.InsertDetails(product);
+
+
+
+            ProductsQuery pq = new ProductsQuery();
+            listView.ItemsSource = pq.GetProductList();
+
+            //----------------------------------------------------------------------------------------------------------------------------
+
+           // listView.ItemsSource = myList;
+
+            //for (int x = 0; x < 20; x++)
+            //{
+            //   // myList.Add(new data() {Image= "Info.png", Name = "Kottu", Price = "10", Description = "This is a nice food!" });
+
+            //}
+        
 
 
             DoSomeDataAccess();

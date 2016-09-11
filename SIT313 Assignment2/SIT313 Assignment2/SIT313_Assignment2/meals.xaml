@@ -4,18 +4,43 @@
              x:Class="SIT313_Assignment2.meals">
 
 
-  <ListView x:Name="listView">
+  <ListView x:Name="listView" RowHeight="100" SelectedItem="Add_btn_Clicked">
     <ListView.ItemTemplate>
       <DataTemplate>
         <ViewCell  >
-          <StackLayout 
-          Orientation="Vertical">
+          <StackLayout  Orientation="Vertical" >
             <StackLayout Orientation="Horizontal">
-              <Image Source="icon.png" />
-              <Label Text="{Binding Name}"/>
-              <Label Text="{Binding Description}"/>
-              <Label Text="{Binding Price}" />
-              <Button Text="+" Clicked="Add_btn_Clicked" />
+              <Image Source="{Binding Image}"
+              HeightRequest="100"
+                     WidthRequest="100"
+              />
+              
+                <StackLayout Orientation="Vertical">
+              
+                <Label 
+                  Text="{Binding Name}"
+                   FontSize="Medium" 
+                />
+                  
+              <Label 
+                  Text="{Binding Description}"
+                  FontSize="Small" 
+                />
+                </StackLayout>
+              
+              <Label 
+                Text="{Binding Price}" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                FontSize="Medium" 
+            />
+              <Button 
+                      Image="cart.png"
+                      Clicked="Add_btn_Clicked" 
+                      BackgroundColor="Transparent"
+                    
+                      
+          />
             </StackLayout>
           </StackLayout>
         </ViewCell>
