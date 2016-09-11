@@ -2,5 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SIT313_Assignment2.AboutUs">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+    <StackLayout Spacing="10" x:Name="layout" Padding="15">
+      <Label Text="--Restaurant Information--" HorizontalTextAlignment="Center" FontSize="20"/>
+      <Image Source="icon.png" HeightRequest="250" WidthRequest="250" Aspect="AspectFit" />
+      <Label Text="Elephant House Restaurant is located in Australia. Our business has been up and running for 10 years." FontSize="12" />
+      <Label Text="We serve at the highest standards of quality, freshness and seasonality and combines both modern-creative and traditional southern styles of Sri Lankan cuisine." FontSize="12" />
+
+      <Label Text="--Developer Information--" HorizontalTextAlignment="Center" FontSize="20"/>
+      <Image Source="icon.png" HeightRequest="250" WidthRequest="250" Aspect="AspectFit" />
+      <Label Text="This app has been developed by Dulara, Dulanjan and Shanya" FontSize="12"/>
+    </StackLayout>
+  </ScrollView>
 </ContentPage>

@@ -23,5 +23,10 @@ namespace SIT313_Assignment2
         {
             Navigation.PushAsync(new meals());
         }
+
+        public void About_btn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AboutUs());
+        }
     }
 }
