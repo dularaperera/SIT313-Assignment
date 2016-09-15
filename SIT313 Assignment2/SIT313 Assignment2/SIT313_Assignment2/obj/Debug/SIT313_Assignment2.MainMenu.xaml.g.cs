@@ -17,12 +17,24 @@ namespace SIT313_Assignment2 {
     public partial class MainMenu : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.StackLayout layout;
+        private global::Xamarin.Forms.StackLayout outerstack;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout outerstack1;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout outerstack2;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout outerstack3;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainMenu));
-            layout = this.FindByName<global::Xamarin.Forms.StackLayout>("layout");
+            outerstack = this.FindByName<global::Xamarin.Forms.StackLayout>("outerstack");
+            outerstack1 = this.FindByName<global::Xamarin.Forms.StackLayout>("outerstack1");
+            outerstack2 = this.FindByName<global::Xamarin.Forms.StackLayout>("outerstack2");
+            outerstack3 = this.FindByName<global::Xamarin.Forms.StackLayout>("outerstack3");
         }
     }
 }

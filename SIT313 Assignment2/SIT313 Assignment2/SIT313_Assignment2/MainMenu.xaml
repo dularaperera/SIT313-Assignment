@@ -3,13 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SIT313_Assignment2.MainMenu">
 
-  <StackLayout Spacing="10" x:Name="layout">
-    <Image Source="icon.png" HeightRequest="100" WidthRequest="100" Aspect="AspectFit" />
-    <Button Text="Meals" VerticalOptions="Center" HorizontalOptions="Center"  WidthRequest="200" Clicked="Meals_btn_Clicked" />
-    <Button Text="About Us" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Clicked="About_btn_Clicked"/>
-    <Button Text="Login" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Clicked="Login_btn_Clicked"/>
-    <Button Text="Our Restaurent" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" />
-    
+  <StackLayout Spacing="10" Orientation="Vertical" x:Name ="outerstack" HorizontalOptions="Center" VerticalOptions="Center">
+    <StackLayout Spacing="10" Orientation="Vertical" x:Name ="outerstack1" HorizontalOptions="Center" WidthRequest="1000">
+      <Image Source="icon.png" HeightRequest="100" WidthRequest="100" Aspect="AspectFit" />
+    </StackLayout>
+    <StackLayout Spacing="10" Orientation="Vertical" x:Name ="outerstack2" HorizontalOptions="Center" VerticalOptions="Center">
+      <Button Text="Meals" VerticalOptions="Center" HorizontalOptions="Center"  WidthRequest="200" Clicked="Meals_btn_Clicked" />
+      <Button Text="About Us" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Clicked="About_btn_Clicked"/>
+    </StackLayout>
+    <StackLayout  Orientation="Vertical" x:Name ="outerstack3" HorizontalOptions="Center" VerticalOptions="Center">
+      <Button Text="Login" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Clicked="Login_btn_Clicked"/>
+      <Button Text="Our Restaurent" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" />
+    </StackLayout>
+
   </StackLayout>
-  
 </ContentPage> 
