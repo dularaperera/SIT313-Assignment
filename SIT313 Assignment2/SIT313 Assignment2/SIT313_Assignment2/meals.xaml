@@ -4,12 +4,15 @@
              x:Class="SIT313_Assignment2.meals">
 
 
-  <ListView x:Name="listView" RowHeight="100" SelectedItem="Add_btn_Clicked">
-    <ListView.ItemTemplate>
+  <ListView x:Name="listView" RowHeight="100">
+     
+     
+    
+    <ListView.ItemTemplate >
       <DataTemplate>
-        <ViewCell  >
-          <StackLayout  Orientation="Vertical" >
-            <StackLayout Orientation="Horizontal">
+        <ViewCell>
+          <StackLayout  Orientation="Vertical" Padding="5">
+            <StackLayout Orientation="Horizontal"  BackgroundColor="Black">
               <Image Source="{Binding Image}"
               HeightRequest="100"
                      WidthRequest="100"
@@ -19,29 +22,42 @@
               
                 <Label 
                   Text="{Binding Name}"
-                   FontSize="Medium" 
+                   FontSize="Small" 
                 />
                   
               <Label 
                   Text="{Binding Description}"
-                  FontSize="Small" 
+                  FontSize="Micro" 
                 />
                 </StackLayout>
-              
+               
               <Label 
                 Text="{Binding Price}" 
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"
-                FontSize="Medium" 
+                FontSize="17" 
+                 WidthRequest="60"
+                HorizontalTextAlignment="End"
+            />
+              <Label
+                Text="$"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                FontSize="Micro"
+                 WidthRequest="5"
             />
               <Button 
                       Image="cart.png"
                       Clicked="Add_btn_Clicked" 
                       BackgroundColor="Transparent"
-                    
+                     WidthRequest="50"
+                    CommandParameter="{Binding Name}"
+                      
+                      
                       
           />
             </StackLayout>
+          
           </StackLayout>
         </ViewCell>
       </DataTemplate>

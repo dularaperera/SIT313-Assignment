@@ -13,6 +13,11 @@ namespace SIT313_Assignment2
         {
             // The root page of your application
             MainPage = new NavigationPage(new MainMenu());
+            
+            //MainPage.BackgroundColor = Color.FromHex("#00162E");
+           
+           
+            
         }
 
         protected override void OnStart()

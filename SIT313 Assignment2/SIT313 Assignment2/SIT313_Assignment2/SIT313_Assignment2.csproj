@@ -35,10 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="About.cs" />
     <Compile Include="AboutUs.xaml.cs">
       <DependentUpon>AboutUs.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.cs" />
+    <Compile Include="Cart.xaml.cs">
+      <DependentUpon>Cart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomCell.cs" />
     <Compile Include="data.cs" />
     <Compile Include="Details.xaml.cs">
@@ -54,6 +58,8 @@
     <Compile Include="Meals.xaml.cs">
       <DependentUpon>Meals.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomerQuery.cs" />
+    <Compile Include="Models\CustomersDB.cs" />
     <Compile Include="Models\ProductsDB.cs" />
     <Compile Include="Models\ProductsQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,9 +108,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -135,7 +138,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bt.png" />
+    <Content Include="Models\bt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cart.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

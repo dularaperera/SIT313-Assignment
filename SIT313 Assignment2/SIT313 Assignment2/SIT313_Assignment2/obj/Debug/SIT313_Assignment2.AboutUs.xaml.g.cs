@@ -17,8 +17,12 @@ namespace SIT313_Assignment2 {
     public partial class AboutUs : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout outerstack;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(AboutUs));
+            outerstack = this.FindByName<global::Xamarin.Forms.StackLayout>("outerstack");
         }
     }
 }

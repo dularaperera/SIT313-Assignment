@@ -10,9 +10,15 @@ namespace SIT313_Assignment2
 {
     public partial class Details : ContentPage
     {
-        public Details()
+        public Details(String image, String name, String description, String price)
         {
+            this.BackgroundImage = "background.png";
             InitializeComponent();
+            Name.Text = name;
+            Description.Text = description;
+            Price.Text = "$"+price;
+            Image.Source = image;
+
         }
     }
 }
