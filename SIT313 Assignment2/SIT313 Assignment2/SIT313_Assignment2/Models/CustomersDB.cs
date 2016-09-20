@@ -9,7 +9,7 @@ namespace SIT313_Assignment2.Models
 {
    public class CustomersDB
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey, AutoIncrement, Column("Id")]
         public int Id { get; set; }
 
         [MaxLength(500)]

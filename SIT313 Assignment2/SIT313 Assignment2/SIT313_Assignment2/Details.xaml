@@ -39,13 +39,14 @@
     <Label  x:Name="Description"
         Text=""
         FontSize="Small"
-            TextColor="Gray"
+            TextColor="Black"
                 />
-    <StackLayout Orientation="Horizontal"   HorizontalOptions ="Fill" >
+    <StackLayout Orientation="Horizontal"   HorizontalOptions ="Center" VerticalOptions="Center" >
       <Label
         Text="Select Quantity"
         FontSize="Micro"
         TextColor="Maroon"
+        HorizontalOptions ="Center" VerticalOptions="Center"
       />
       <Entry
         Text="1"
@@ -56,10 +57,12 @@
         TextColor="Black"
         
         />
-    </StackLayout>
-    </StackLayout>
-    <Button
+      <Button
       Text="Add Cart"
+      Clicked="Add_btn_Clicked"
       />
+    </StackLayout>
+    </StackLayout>
+    
   </StackLayout>
 </ContentPage>

@@ -4,10 +4,9 @@
              x:Class="SIT313_Assignment2.meals">
 
 
-  <ListView x:Name="listView" RowHeight="100">
+  <ListView x:Name="listview" RowHeight="100">
      
-     
-    
+        
     <ListView.ItemTemplate >
       <DataTemplate>
         <ViewCell>

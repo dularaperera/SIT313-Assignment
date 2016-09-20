@@ -2,58 +2,65 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SIT313_Assignment2.Cart">
-  <ListView.ItemTemplate >
-    <DataTemplate>
-      <ViewCell>
-       
-          <StackLayout Orientation="Horizontal"  BackgroundColor="Black">
-            <Image Source="{Binding Image}"
-            HeightRequest="100"
-                   WidthRequest="100"
-              />
 
-
-              <Label
-                Text="{Binding Name}"
-                 FontSize="Small"
-                />
-
-              <Label
-                  Text="{Binding Description}"
-                  FontSize="Micro"
-                />
+  <StackLayout HorizontalOptions="End" VerticalOptions="End"> 
+    <Label Text="item price" FontSize="Micro"/>
+    <Label Text="qty" FontSize="Micro"/>
+    <Label Text="sub total" FontSize="Micro"/>
+  </StackLayout>
+  <ListView x:Name="cart" RowHeight="60">
+    <ListView.ItemTemplate >
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout  Orientation="Vertical" Padding="2" VerticalOptions="Fill" HorizontalOptions="Fill">
             
+            <StackLayout Orientation="Horizontal"  BackgroundColor="Black" >
+              <Image Source="{Binding Image}"
+              HeightRequest="50"
+                     WidthRequest="50"
+              />
+              <StackLayout Orientation="Horizontal"  >
+              <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill">
 
-            <Label
-              Text="{Binding Price}"
-              HorizontalOptions="Center"
-              VerticalOptions="CenterAndExpand"
-              FontSize="17"
-               WidthRequest="60"
-              HorizontalTextAlignment="End"
+                <Label
+                  Text="{Binding Name}"
+                   FontSize="Small"
+                />
+                <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
+                <Label
+                    Text="{Binding Price}"
+                    FontSize="Small"
+                     VerticalOptions="End" HorizontalOptions="End"
+                />
+              
+
+              <Label
+                Text="{Binding Qty}"
+                FontSize="Small"
+                WidthRequest="60"
+                HorizontalTextAlignment="End"
+                VerticalOptions="End" 
+                HorizontalOptions="End"
             />
-            <Label
-              Text="$"
-              HorizontalOptions="Center"
-              VerticalOptions="CenterAndExpand"
-              FontSize="Micro"
-               WidthRequest="5"
+              
+
+
+                <Label
+                Text="{Binding Total}"
+                VerticalOptions="End" 
+                HorizontalOptions="End"
+                FontSize="20"
+                WidthRequest="60"
+                HorizontalTextAlignment="End"
             />
-            <Button
-                    Image="cart.png"
-                    Clicked="Add_btn_Clicked"
-                    BackgroundColor="Transparent"
-                   WidthRequest="50"
-                  CommandParameter="{Binding Name}"
-                      
-                      
-                      
-          />
+                </StackLayout>
+              </StackLayout>
+              </StackLayout>
+              </StackLayout>
+            
           </StackLayout>
-
-        
-      </ViewCell>
-    </DataTemplate>
-  </ListView.ItemTemplate>
- 
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
 </ContentPage>

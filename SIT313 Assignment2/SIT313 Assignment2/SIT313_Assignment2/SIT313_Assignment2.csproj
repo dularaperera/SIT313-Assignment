@@ -58,6 +58,8 @@
     <Compile Include="Meals.xaml.cs">
       <DependentUpon>Meals.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\CartQuery.cs" />
+    <Compile Include="Models\CartRecord.cs" />
     <Compile Include="Models\CustomerQuery.cs" />
     <Compile Include="Models\CustomersDB.cs" />
     <Compile Include="Models\ProductsDB.cs" />
@@ -136,9 +138,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Models\bt.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cart.xaml">

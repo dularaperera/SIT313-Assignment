@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIT313_Assignment2.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,13 @@ namespace SIT313_Assignment2
         public Cart()
         {
             InitializeComponent();
+
+            CartQuery c = new CartQuery();
+       
+
+            cart.ItemsSource = c.GetList();
+           
+           
         }
     }
 }

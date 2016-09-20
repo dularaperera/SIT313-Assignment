@@ -57,6 +57,14 @@ namespace SIT313_Assignment2
             }
         }
 
+        public int GetNoOfProducts()
+        {
+            lock (locker)
+            { 
+                return (from i in sqlcon.Table<ProductsDB>() select i).ToList().Count;
+            }
+        }
+
 
         //Get specific Note by ID
         public ProductsDB GetNote(int id)

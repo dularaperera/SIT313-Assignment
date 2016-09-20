@@ -17,12 +17,12 @@ namespace SIT313_Assignment2 {
     public partial class meals : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView listView;
+        private global::Xamarin.Forms.ListView listview;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(meals));
-            listView = this.FindByName<global::Xamarin.Forms.ListView>("listView");
+            listview = this.FindByName<global::Xamarin.Forms.ListView>("listview");
         }
     }
 }
