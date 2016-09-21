@@ -35,27 +35,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="About.cs" />
-    <Compile Include="AboutUs.xaml.cs">
+    <Compile Include="Views\AboutUs.xaml.cs">
       <DependentUpon>AboutUs.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.cs" />
-    <Compile Include="Cart.xaml.cs">
+    <Compile Include="Views\Cart.xaml.cs">
       <DependentUpon>Cart.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CustomCell.cs" />
-    <Compile Include="data.cs" />
-    <Compile Include="Details.xaml.cs">
+    <Compile Include="Views\CustomCell.cs" />
+    <Compile Include="Views\data.cs" />
+    <Compile Include="Views\Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interface\IProducts.cs" />
-    <Compile Include="Login.xaml.cs">
+    <Compile Include="Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.xaml.cs">
+    <Compile Include="Views\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Meals.xaml.cs">
+    <Compile Include="Views\Meals.xaml.cs">
       <DependentUpon>Meals.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\CartQuery.cs" />
@@ -65,7 +64,7 @@
     <Compile Include="Models\ProductsDB.cs" />
     <Compile Include="Models\ProductsQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignUp.xaml.cs">
+    <Compile Include="Views\SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -100,47 +99,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GettingStarted.Xamarin" />
+    <None Include="Views\GettingStarted.Xamarin" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainMenu.xaml">
+    <EmbeddedResource Include="Views\MainMenu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Login.xaml">
+    <EmbeddedResource Include="Views\Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Meals.xaml">
+    <EmbeddedResource Include="Views\Meals.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutUs.xaml">
+    <EmbeddedResource Include="Views\AboutUs.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SignUp.xaml">
+    <EmbeddedResource Include="Views\SignUp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Details.xaml">
+    <EmbeddedResource Include="Views\Details.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Cart.xaml">
+    <EmbeddedResource Include="Views\Cart.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
