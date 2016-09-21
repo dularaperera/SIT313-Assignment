@@ -64,8 +64,14 @@
     <Compile Include="Models\ProductsDB.cs" />
     <Compile Include="Models\ProductsQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\PayNow.xaml.cs">
+      <DependentUpon>PayNow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThankYou.xaml.cs">
+      <DependentUpon>ThankYou.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +146,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Cart.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PayNow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ThankYou.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

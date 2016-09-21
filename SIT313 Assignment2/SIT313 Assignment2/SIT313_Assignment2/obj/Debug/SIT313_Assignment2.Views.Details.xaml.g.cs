@@ -32,6 +32,9 @@ namespace SIT313_Assignment2 {
         private global::Xamarin.Forms.Label Description;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry Qty;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Details));
             layout = this.FindByName<global::Xamarin.Forms.StackLayout>("layout");
@@ -39,6 +42,7 @@ namespace SIT313_Assignment2 {
             Name = this.FindByName<global::Xamarin.Forms.Label>("Name");
             Price = this.FindByName<global::Xamarin.Forms.Label>("Price");
             Description = this.FindByName<global::Xamarin.Forms.Label>("Description");
+            Qty = this.FindByName<global::Xamarin.Forms.Entry>("Qty");
         }
     }
 }

@@ -44,6 +44,7 @@ namespace SIT313_Assignment2
                     if (password.Text == c.Password)
                     {
                         DisplayAlert("Alert", "login succesful", "OK");
+                        Navigation.PushAsync(new Views.PayNow());
                     }
                     else
                     {

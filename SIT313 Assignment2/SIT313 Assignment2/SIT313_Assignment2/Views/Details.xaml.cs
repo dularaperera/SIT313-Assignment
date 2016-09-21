@@ -17,6 +17,7 @@ namespace SIT313_Assignment2
         public Details(String image, String name, String description, String price)
         {
             this.BackgroundImage = "background.png";
+            this.Title = "Product Details";
             InitializeComponent();
             Name.Text = name;
             Description.Text = description;
@@ -30,7 +31,7 @@ namespace SIT313_Assignment2
  public void Add_btn_Clicked(object sender, EventArgs e) { 
 
             CartRecord pd = new CartRecord();
-            int qty = 10;
+            int qty = Convert.ToInt16(Qty.Text);
             int total = Convert.ToInt32(pprice);
             pd.Name = Name.Text;
             pd.Price = Price.Text;

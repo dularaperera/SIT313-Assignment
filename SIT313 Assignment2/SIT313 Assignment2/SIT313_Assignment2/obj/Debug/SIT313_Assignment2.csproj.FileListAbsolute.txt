@@ -59,7 +59,7 @@ C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment
 C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\obj\Debug\SIT313_Assignment2.Views.SignUp.xaml.g.cs
 C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\obj\Debug\SIT313_Assignment2.Views.Details.xaml.g.cs
 C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\obj\Debug\SIT313_Assignment2.Views.Cart.xaml.g.cs
-C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\obj\Debug\SIT313_Assignment2.dll.mdb
-C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\bin\Debug\SIT313_Assignment2.dll.mdb
+C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\obj\Debug\SIT313_Assignment2.Views.PayNow.xaml.g.cs
+C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\obj\Debug\SIT313_Assignment2.Views.ThankYou.xaml.g.cs
 C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\obj\Debug\SIT313_Assignment2.dll.mdb
 C:\Users\Dulara\Documents\SIT313-Assignment\SIT313 Assignment2\SIT313 Assignment2\SIT313_Assignment2\bin\Debug\SIT313_Assignment2.dll.mdb

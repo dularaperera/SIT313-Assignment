@@ -1,4 +1,5 @@
 ﻿using SQLite.Net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
@@ -54,6 +55,20 @@ namespace SIT313_Assignment2.Models
         }
 
 
+        public int GetTotal()
+        {
+            int gtot = 0;
+            lock (locker)
+            {
+            List<CartRecord> items =    (from i in s.Table<CartRecord>() select i).ToList();
+
+                foreach (CartRecord x in items) {
+                    gtot += Convert.ToInt32(x.Total);
+                        
+                        }
+            }
+            return gtot;
+        }
 
         //Dispose
         public void Dispose()

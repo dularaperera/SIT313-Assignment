@@ -49,6 +49,7 @@
         HorizontalOptions ="Center" VerticalOptions="Center"
       />
       <Entry
+        x:Name="Qty"
         Text="1"
         Keyboard="Numeric"
         WidthRequest="50"

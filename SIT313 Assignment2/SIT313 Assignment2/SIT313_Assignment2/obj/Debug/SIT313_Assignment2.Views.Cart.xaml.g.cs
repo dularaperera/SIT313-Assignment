@@ -20,9 +20,13 @@ namespace SIT313_Assignment2 {
         private global::Xamarin.Forms.ListView cart;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label total;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Cart));
             cart = this.FindByName<global::Xamarin.Forms.ListView>("cart");
+            total = this.FindByName<global::Xamarin.Forms.Label>("total");
         }
     }
 }
