@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIT313_Assignment2.MainMenu">
+
+  <RelativeLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <StackLayout Padding="20,0,20,0" x:Name="layout" HorizontalOptions="Center" VerticalOptions="Center">
+      <Image Source="newlogo.png"
+             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+           />
+      <StackLayout   BackgroundColor="#f2e6d9" Padding="0,0,0,20" HorizontalOptions="Center" VerticalOptions="Center" Opacity="0.8">
+        <Image Source="wallpaper.jpg"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+           />
+        <Button  Text="Meals" VerticalOptions="Center" HorizontalOptions="Center"  WidthRequest="200" Clicked="Meals_btn_Clicked" BackgroundColor="Transparent" TextColor="Maroon" BorderColor="Maroon" BorderRadius="50" BorderWidth="1" FontSize="12"/>
+        <Button Text="About Us" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Clicked="About_btn_Clicked" BackgroundColor="Transparent" TextColor="Maroon" BorderColor="Maroon" BorderRadius="50" BorderWidth="1" FontSize="12"/>
+        <Button Text="Login" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Clicked="Login_btn_Clicked" BackgroundColor="Transparent" TextColor="Maroon" BorderColor="Maroon" BorderRadius="50" BorderWidth="1" FontSize="12"/>
+      </StackLayout>
+    </StackLayout>
+  </RelativeLayout>
+</ContentPage>
